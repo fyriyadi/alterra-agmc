@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "7f509842-f30f-43a9-a977-7ba8861e8a38",
+		"name": "Day 2 Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17148804"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Get All Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Book",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 14:17:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": [\n        {\n            \"ID\": 1,\n            \"title\": \"How to Read\",\n            \"author\": \"William N.\",\n            \"publisher\": \"Anthropy\"\n        },\n        {\n            \"ID\": 2,\n            \"title\": \"How to Unread\",\n            \"author\": \"Naritha W.\",\n            \"publisher\": \"Ganesh\"\n        }\n    ],\n    \"message\": \"successfuly retrive book data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Book By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/books/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Book Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/books/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"books",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Sep 2022 15:22:48 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "128"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": {\n        \"ID\": 2,\n        \"title\": \"How to Read\",\n        \"author\": \"William N.\",\n        \"publisher\": \"Anthropy\"\n    },\n    \"message\": \"successfuly retrive book data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create New Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/books",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create New Book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/books",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 09:24:24 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "127"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": {\n        \"ID\": 1,\n        \"title\": \"How to Read\",\n        \"author\": \"William N.\",\n        \"publisher\": \"Anthropy\"\n    },\n    \"message\": \"successfuly create book data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Book Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/books/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Book Data",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/books/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"books",
+										"2"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 09:28:11 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "127"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": {\n        \"ID\": 1,\n        \"title\": \"How to Read\",\n        \"author\": \"William N.\",\n        \"publisher\": \"Anthropy\"\n    },\n    \"message\": \"successfuly update book data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Book Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/books/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Book Data",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/books/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"books",
+										"2"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 09:29:14 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"successfuly delete book data\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get All User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/users",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:17:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"ID\": 2,\n            \"name\": \"Bambang\",\n            \"email\": \"bambang@gmail.com\",\n            \"password\": \"secret\"\n        },\n        {\n            \"ID\": 3,\n            \"name\": \"Adi\",\n            \"email\": \"adi@gmail.com\",\n            \"password\": \"secret\"\n        }\n    ],\n    \"message\": \"successfuly retrive user data\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Adi\",\r\n    \"email\": \"adi@gmail.com\",\r\n    \"password\": \"secret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Adi\",\r\n    \"email\": \"adi@gmail.com\",\r\n    \"password\": \"secret\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/v1/users",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:10:57 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"successfuly create user\",\n    \"status\": 201\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/users/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/users/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:27:33 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "138"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 2,\n        \"name\": \"Bambang\",\n        \"email\": \"bambang@gmail.com\",\n        \"password\": \"secret\"\n    },\n    \"message\": \"successfuly retrive user data\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Update User By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"name\": \"Adi Namnung\",\r\n    \"email\": \"adi@gmail.com\",\r\n    \"password\": \"secret\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/v1/users/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User By Id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"name\": \"Adi Namnung\",\r\n    \"email\": \"adi@gmail.com\",\r\n    \"password\": \"secret\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/v1/users/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"users",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:35:55 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 3,\n        \"name\": \"Adi Namnung\",\n        \"email\": \"adi@gmail.com\",\n        \"password\": \"secret\"\n    },\n    \"message\": \"successfuly update user data\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/v1/users/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/v1/users/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"users",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 Sep 2022 10:38:44 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"successfuly delete user data\",\n    \"status\": 200\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
